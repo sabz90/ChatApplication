@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbIP = new System.Windows.Forms.TextBox();
             this.btnStartServer = new System.Windows.Forms.Button();
             this.btnStopServer = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "IP:";
             // 
-            // textBox1
+            // tbIP
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(110, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbIP.Location = new System.Drawing.Point(39, 31);
+            this.tbIP.Name = "tbIP";
+            this.tbIP.ReadOnly = true;
+            this.tbIP.Size = new System.Drawing.Size(110, 20);
+            this.tbIP.TabIndex = 1;
             // 
             // btnStartServer
             // 
@@ -65,9 +65,11 @@
             this.btnStartServer.TabIndex = 2;
             this.btnStartServer.Text = "Start Server";
             this.btnStartServer.UseVisualStyleBackColor = true;
+            this.btnStartServer.Click += new System.EventHandler(this.btnStartServer_Click);
             // 
             // btnStopServer
             // 
+            this.btnStopServer.Enabled = false;
             this.btnStopServer.Location = new System.Drawing.Point(372, 26);
             this.btnStopServer.Name = "btnStopServer";
             this.btnStopServer.Size = new System.Drawing.Size(91, 28);
@@ -136,7 +138,7 @@
             this.Controls.Add(this.btnStopServer);
             this.Controls.Add(this.btnStartServer);
             this.Controls.Add(this.tbPort);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbIP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbServerStatus);
             this.Controls.Add(this.label4);
@@ -152,7 +154,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbIP;
         private System.Windows.Forms.Button btnStartServer;
         private System.Windows.Forms.Button btnStopServer;
         private System.Windows.Forms.Label label2;

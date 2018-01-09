@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ChatServer")]
+[assembly: AssemblyTitle("ChatService")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Harman Corporate")]
-[assembly: AssemblyProduct("ChatServer")]
+[assembly: AssemblyProduct("ChatService")]
 [assembly: AssemblyCopyright("Copyright © Harman Corporate 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
